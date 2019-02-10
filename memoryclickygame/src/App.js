@@ -2,20 +2,19 @@ import React, { Component } from "react";
 import DisplayCard from "./components/DisplayCard";
 import Jumbotron from "./components/Jumbotron";
 import Wrapper from "./components/Wrapper";
-// import cards from "./cards.json";
+import cards from "./cards.json";
 import "./App.css";
-// import React from 'react';
-// import { Jumbotron, Container } from 'reactstrap'; 
+
 
 let correctGuesses = 0;
 let bestScore = 0;
-let clickMessage = "Click on an image to earn points, but don't click on any more than once!";
+let clickMessage = "Click on an image to earn points, but don't click on the same one twice!";
 
 
 class App extends Component {
   // Setting this.state.friends to the friends json array
   state = {
-    // cards,
+    cards,
     correctGuesses,
     bestScore,
     clickMessage
