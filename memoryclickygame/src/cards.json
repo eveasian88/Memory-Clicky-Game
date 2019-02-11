@@ -2,61 +2,61 @@
     {
       "id": 1,
       "name": "Card1",
-      "image": "images/nemo1.jpg"
+      "image": "public/images/nemo1.jpg"
     },
     {
       "id": 2,
       "name": "Card2",
-      "image": "images/nemo2.jpg"
+      "image": "public/images/nemo2.jpg"
     },
     {
       "id": 3,
       "name": "Card3",
-      "image": "images/nemo3/jpg"
+      "image": "public/images/nemo3/jpg"
     },
     {
       "id": 4,
       "name": "Card4",
-      "image": "images/nemo4.jpg"
+      "image": "public/images/nemo4.jpg"
     },
     {
       "id": 5,
       "name": "Card5",
-      "image": "images/nemo5.jpg"
+      "image": "public/images/nemo5.jpg"
     },
     {
       "id": 6,
       "name": "Card6",
-      "image": "images/nemo6.jpg"
+      "image": "public/images/nemo6.jpg"
     },
     {
       "id": 7,
       "name": "Card7",
-      "image": "images/nemo7.jpg"
+      "image": "public/images/nemo7.jpg"
     },
     {
       "id": 8,
       "name": "Card8",
-      "image": "images/nemo8.jpg"
+      "image": "public/images/nemo8.jpg"
     },
     {
       "id": 9,
       "name": "Card9",
-      "image": "images/nemo9.jpg"
+      "image": "public/images/nemo9.jpg"
     },
     {
       "id": 10,
       "name": "Card10",
-      "image": "images/nemo10.jpg"
+      "image": "public/images/nemo10.jpg"
     },
     {
       "id": 11,
       "name": "Card11",
-      "image": "images/nemo11.jpg"
+      "image": "public/images/nemo11.jpg"
     },
     {
       "id": 12,
       "name": "Card12",
-      "image": "images/nemo12.jpg"
+      "image": "public/images/nemo12.jpg"
     }
   ]

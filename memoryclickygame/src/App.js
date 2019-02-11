@@ -54,7 +54,7 @@ class App extends Component {
       // increment the appropriate counter
       correctGuesses++;
 
-      clickMessage = "Keep going, you're doing great.";
+      clickMessage = "Keep going, you're doing great!";
 
       if (correctGuesses > bestScore) {
         bestScore = correctGuesses;
