@@ -8,11 +8,11 @@ import "./App.css";
 
 let correctGuesses = 0;
 let bestScore = 0;
-let clickMessage = "Click on an image to earn points, but don't click on the same one twice!";
+let clickMessage = "Click on an image to earn points, but don't click on the same image twice!";
 
 
 class App extends Component {
-  // Setting this.state.friends to the friends json array
+  // setting this.state.friends to the friends json array
   state = {
     cards,
     correctGuesses,
@@ -22,21 +22,20 @@ class App extends Component {
 
   setClicked = id => {
 
-    // Make a copy of the state friends array to work with
+    // make a copy of the state friends array to work with
     const cards = this.state.cards;
 
-    // Filter for the clicked Friend
+    // filter for the clicked Friend
     const clickedCard = cards.filter(card => card.id === id);
 
-    // If the Friended image's clicked value is already true, 
-    // do the game over actions
+    // if the image's clicked value is already true, do the game over actions
     if (clickedCard[0].clicked) {
 
       console.log("Correct Guesses: " + correctGuesses);
       console.log("Best Score: " + bestScore);
 
       correctGuesses = 0;
-      clickMessage = "Better luck next time... Thank's for Playing!"
+      clickMessage = "Better luck next time. Thanks for Playing!"
 
       for (let i = 0; i < cards.length; i++) {
         cards[i].clicked = false;
@@ -46,10 +45,10 @@ class App extends Component {
       this.setState({ correctGuesses });
       this.setState({ cards });
 
-      // Otherwise, if clicked = false, and the user hasn't finished
+      // otherwise, if clicked = false, and the user hasn't finished
     } else if (correctGuesses < 11) {
 
-      // Set its value to true
+      // set its value to true
       clickedCard[0].clicked = true;
 
       // increment the appropriate counter
@@ -62,23 +61,23 @@ class App extends Component {
         this.setState({ bestScore });
       }
 
-      // Shuffle the array to be rendered in a random order
+      // shuffle the array to be rendered in a random order
       cards.sort(function (a, b) { return 0.5 - Math.random() });
 
-      // Set this.state.friends equal to the new friends array
+      // set this.state.friends equal to the new friends array
       this.setState({ cards });
       this.setState({ correctGuesses });
       this.setState({ clickMessage });
     } else {
 
-      // Set its value to true
+      // set its value to true
       clickedCard[0].clicked = true;
 
       // restart the guess counter
       correctGuesses = 0;
 
-      // Egg on the user to play again
-      clickMessage = "Great Job, you got them all.";
+      // encourage user to play again
+      clickMessage = "Great Job, you got them all!";
       bestScore = 12;
       this.setState({ bestScore });
 
@@ -86,10 +85,10 @@ class App extends Component {
         cards[i].clicked = false;
       }
 
-      // Shuffle the array to be rendered in a random order
+      // shuffle the array to be rendered in a random order
       cards.sort(function (a, b) { return 0.5 - Math.random() });
 
-      // Set this.state.friends equal to the new friends array
+      // set this.state.friends equal to the new friends array
       this.setState({ cards });
       this.setState({ correctGuesses });
       this.setState({ clickMessage });
@@ -97,7 +96,7 @@ class App extends Component {
     }
   };
 
-  // Map over this.state.friends and render a FriendCard component for each friend object
+  // map over this.state.friends and render a FriendCard component for each friend object
   render() {
     return (
 
@@ -105,7 +104,7 @@ class App extends Component {
 
 
         <Jumbotron >
-        <h1>Clicky Game!</h1>
+        <h1>Memory Clicky Game!</h1>
 
           <span  className="scoreSummary">
               {this.state.clickMessage} 
@@ -115,10 +114,8 @@ class App extends Component {
             Best Score: {this.state.bestScore}
           </span  >
           <br />
-          
+      
         </Jumbotron>
-
-
 
 
 
