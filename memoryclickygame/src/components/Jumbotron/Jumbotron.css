@@ -5,7 +5,7 @@
     text-decoration: none; 
     color:black;
     margin-bottom: 10px;
-    background-color: lightgray; 
+    background-color: rgb(245, 245, 113); 
     clear: "both";
     background-image:url("/public/images/waveSun.jpg");
     z-index: 99;
