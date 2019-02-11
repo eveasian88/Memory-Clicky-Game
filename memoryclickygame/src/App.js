@@ -77,7 +77,7 @@ class App extends Component {
       correctGuesses = 0;
 
       // encourage user to play again
-      clickMessage = "Great Job, you got them all!";
+      clickMessage = "AWESOME! YOU GOT THEM ALL!";
       bestScore = 12;
       this.setState({ bestScore });
 
