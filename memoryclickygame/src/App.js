@@ -104,7 +104,7 @@ class App extends Component {
 
 
         <Jumbotron >
-        <h1>Memory Clicky Game!</h1>
+        <h1>Finding Nemo Memory Game</h1>
 
           <span  className="scoreSummary">
               {this.state.clickMessage} 

@@ -5,9 +5,9 @@
     text-decoration: none; 
     color:black;
     margin-bottom: 10px;
-    background-color: rgb(245, 245, 113); 
+    background-color: rgb(244, 244, 154); 
     clear: "both";
-    background-image:url("/public/images/waveSun.jpg");
+    background-image:url("../waveSun.jpg");
     z-index: 99;
   }
   

@@ -1,6 +1,6 @@
 ## Memory Clicky Game
 
-This is a FINDING NEMO memory game made with React.js. 
+This is a FINDING NEMO themed memory game made with React.js. 
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
