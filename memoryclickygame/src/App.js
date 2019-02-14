@@ -118,16 +118,20 @@ class App extends Component {
         </Jumbotron>
 
 
-
-        {this.state.cards.map(card => (
-          <DisplayCard
-            setClicked={this.setClicked}
-            id={card.id}
-            key={card.id}
-            image={card.image}
-
-          />
+        {/* <div className='container'>
+          <div className="row"> */}
+          {this.state.cards.map(card => (
+            
+            <DisplayCard
+              setClicked={this.setClicked}
+              id={card.id}
+              key={card.id}
+              image={card.image}
+            />
         ))}
+          {/* </div>
+        </div> */}
+
       </Wrapper>
     );
   }
