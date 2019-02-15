@@ -5,4 +5,4 @@ Finding Nemo [Memory Game](https://eveasian88.github.io/Memory-Clicky-Game/) bui
 
 ## Game Sample
 
-![memory game](images/memoryGame.gif)
+![finding nemo game](images/memoryGame.gif)
