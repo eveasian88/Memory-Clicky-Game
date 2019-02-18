@@ -1,15 +1,13 @@
 {
-  "main.css": "/Memory-Clicky-Game/static/css/main.907e6c76.chunk.css",
-  "main.js": "/Memory-Clicky-Game/static/js/main.e88ac639.chunk.js",
-  "main.js.map": "/Memory-Clicky-Game/static/js/main.e88ac639.chunk.js.map",
+  "main.css": "/Memory-Clicky-Game/static/css/main.cf5451f6.chunk.css",
+  "main.js": "/Memory-Clicky-Game/static/js/main.a13705bd.chunk.js",
+  "main.js.map": "/Memory-Clicky-Game/static/js/main.a13705bd.chunk.js.map",
   "runtime~main.js": "/Memory-Clicky-Game/static/js/runtime~main.c75bf086.js",
   "runtime~main.js.map": "/Memory-Clicky-Game/static/js/runtime~main.c75bf086.js.map",
   "static/js/2.d16a2668.chunk.js": "/Memory-Clicky-Game/static/js/2.d16a2668.chunk.js",
   "static/js/2.d16a2668.chunk.js.map": "/Memory-Clicky-Game/static/js/2.d16a2668.chunk.js.map",
   "index.html": "/Memory-Clicky-Game/index.html",
-  "precache-manifest.ffd56666636f9aa1b70ad14a169203f9.js": "/Memory-Clicky-Game/precache-manifest.ffd56666636f9aa1b70ad14a169203f9.js",
+  "precache-manifest.6eef0fdf27acb7d74b6149ad79df2391.js": "/Memory-Clicky-Game/precache-manifest.6eef0fdf27acb7d74b6149ad79df2391.js",
   "service-worker.js": "/Memory-Clicky-Game/service-worker.js",
-  "static/css/main.907e6c76.chunk.css.map": "/Memory-Clicky-Game/static/css/main.907e6c76.chunk.css.map",
-  "static/media/Jumbotron.css": "/Memory-Clicky-Game/static/media/croppedWaves.578c9c9d.jpg",
-  "static/media/Wrapper.css": "/Memory-Clicky-Game/static/media/underTheSea.e4502eff.jpg"
+  "static/css/main.cf5451f6.chunk.css.map": "/Memory-Clicky-Game/static/css/main.cf5451f6.chunk.css.map"
 }
