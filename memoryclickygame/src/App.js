@@ -7,7 +7,7 @@ import "./App.css";
 
 
 let correctGuesses = 0;
-let bestScore = 0;
+let topScore = 0;
 let clickMessage = "Click on an image to earn points, but don't click on the same image twice!";
 
 
@@ -16,7 +16,7 @@ class App extends Component {
   state = {
     cards,
     correctGuesses,
-    bestScore,
+    topScore,
     clickMessage
   };
 
@@ -31,11 +31,11 @@ class App extends Component {
     // if the image's clicked value is already true, do the game over actions
     if (clickedCard[0].clicked) {
 
-      console.log("Correct Guesses: " + correctGuesses);
-      console.log("Best Score: " + bestScore);
+      console.log("Score: " + correctGuesses);
+      console.log("Best Score: " + topScore);
 
       correctGuesses = 0;
-      clickMessage = "Better luck next time. Thanks for Playing!"
+      clickMessage = "Oh, you suffer from short term memory loss. Thanks for playing!"
 
       for (let i = 0; i < cards.length; i++) {
         cards[i].clicked = false;
@@ -56,9 +56,9 @@ class App extends Component {
 
       clickMessage = "Just keep swimming! You're doing great!";
 
-      if (correctGuesses > bestScore) {
-        bestScore = correctGuesses;
-        this.setState({ bestScore });
+      if (correctGuesses > topScore) {
+        topScore = correctGuesses;
+        this.setState({ topScore });
       }
 
       // shuffle the array to be rendered in a random order
@@ -78,8 +78,8 @@ class App extends Component {
 
       // encourage user to play again
       clickMessage = "AWESOME! YOU GOT THEM ALL!";
-      bestScore = 12;
-      this.setState({ bestScore });
+      topScore = 12;
+      this.setState({ topScore });
 
       for (let i = 0; i < cards.length; i++) {
         cards[i].clicked = false;
@@ -109,17 +109,15 @@ class App extends Component {
           <span  className="scoreSummary">
               {this.state.clickMessage} 
               <hr/>
-            Correct Guesses: {this.state.correctGuesses}
-            <br />
-            Best Score: {this.state.bestScore}
+            Score: {this.state.correctGuesses} |
+
+            Top Score: {this.state.topScore}
           </span  >
           <br />
-      
+  
         </Jumbotron>
 
 
-        {/* <div className='container'>
-          <div className="row"> */}
           {this.state.cards.map(card => (
             
             <DisplayCard
@@ -129,9 +127,7 @@ class App extends Component {
               image={card.image}
             />
         ))}
-          {/* </div>
-        </div> */}
-
+         
       </Wrapper>
     );
   }
